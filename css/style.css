@@ -168,33 +168,41 @@
 
 .cards {
     max-height: 555px;
-    margin: 60px 0px;
+    margin: 60px 0px 26px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
     width: 255px;
-    padding: 16px;
+    height: 493px;
+    position: relative;
+    border: solid 1px var(--shade-color);
+    border-radius: 3px;
 }
 
+
 .box {
+    width: 223px;
+    height: 273px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.box2 {
     height: 180px;
     background-color: var(--shade-color);
     display: flex;
-    justify-content: space-around;
-    position: relative;
-    border-radius: 5px;
-    padding: 16px;
-    margin-bottom: 16px;
-}
-
-.plant {
-    align-self: center;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .number {
-    justify-content: space-around;
-    align-self: start;
     position: absolute;
     top: 16px;
     left: 16px;
@@ -214,4 +222,61 @@
     line-height: 24px;
     color: var(--color-grey);
     margin-bottom: 16px;
+}
+
+.btn {
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+    color: var(--color-green);
+    background-color: var(--color-dark);
+    border: solid 1px var(--color-green);
+    padding: 10.5px 28.5px;
+    align-self: start;
+    margin-top: auto;
+}
+
+.btn:hover {
+    color: var(--shade-color);
+    background-color: var(--color-green);
+    transition: color 0.1s ease;
+}
+
+.btn:active {
+    color: var(--shade-color);
+    background-color: var(--color-green-active);
+    transition: color 0.2s ease;
+    border: none;
+}
+
+.btn:disabled {
+    color: var(--color-grey);
+    border: var(--color-grey);
+}
+
+/* CAROUSEL */
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.material-icons2 {
+    color: var(--color-grey);
+}
+
+.material-icons2:hover {
+    color: var(--color-green);
+    transform: scale(1.5);
+}
+
+.material-icons2:active {
+    color: var(--color-green-active);
+}
+
+.carousel-text {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
 }
