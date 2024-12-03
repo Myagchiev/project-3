@@ -1,0 +1,96 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        --color-dark: #1D2F30;
+        --color-grey: #899D9D;
+        --color-green: #BAE249;
+        --color-green-active: #688B05;
+        --icon-hover: #91AC46;
+        text-decoration: none;
+    }
+
+    .container {
+        width: 1140px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HEADER */
+
+    .header {
+        padding-top: 17px;
+        padding-bottom: 18px;
+        background-color: #1D2F30;
+        color: #FFFFFF;
+    }
+
+    .header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-logo {
+    }
+    .header-nav {
+        text-decoration: none;
+    }
+    
+    a {
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        color:white;
+      }
+
+    .header-nav ul {
+        display: flex;
+    }
+
+    .header-nav li + li {
+        margin-left: 64px;
+    }
+
+    .header-nav a {
+        transition: color 0.2s ease;
+    }
+
+    .header-nav a:hover {
+        color: var(--color-green);
+    }
+
+    .header-nav a:default {
+        border: solid 1px var(--color-green);
+    }
+
+    .header-nav a:active {
+        color: var(--color-green-active);
+    }
+
+    .header-login {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+
+    span {
+        color: var(--color-green);
+        transition: color 0.2s ease;
+    }
+
+    span:hover {
+        color: var(--icon-hover);
+    }
+
+    span:active {
+        color: var(--color-green-active);
+    }
+
+ 
