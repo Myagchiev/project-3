@@ -55,7 +55,7 @@
                         <div class="box">
                         <p class="name">Fig. 1 (plant)</p>
                         <p class="card-text">Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира своевременно верифицированы.</p>
-                        <a class="btn" href="#">Подробнее</a>
+                        <button type="button" class="btn">Подробнее</button>
                     </div>
                     </div>
                     <div class="card">
@@ -65,7 +65,7 @@
                         <div class="box">
                         <p class="name">Fig. 2 (flower)</p>
                         <p class="card-text">Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации условий.</p>
-                        <a class="btn" href="#">Подробнее</a>
+                        <button type="button" class="btn">Подробнее</button>
                     </div>
                     </div>
                     <div class="card">
@@ -75,7 +75,7 @@
                         <div class="box">
                         <p class="name">Fig. 3 (leaf)</p>
                         <p class="card-text">Лишь непосредственные участники прогресса неоднозначны и будут в равной степени предоставлены сами себе для работы.</p>
-                        <a class="btn" href="#">Подробнее</a>
+                        <button type="button" class="btn">Подробнее</button>
                     </div>
                     </div>
                     <div class="card">
@@ -85,7 +85,7 @@
                         <div class="box">
                         <p class="name">Fig. 4 (wood)</p>
                         <p class="card-text">Базовый вектор развития не даёт нам иного выбора, кроме определения новых предложений.</p>
-                        <a class="btn" href="#">Подробнее</a>
+                        <button type="button" class="btn">Подробнее</button>
                     </div>
                     </div>
                 </div>
@@ -94,19 +94,19 @@
         <section class="carousel">
             <div class="container">
                 <div class="arrows">
-                    <a class="scroll" href="#"><span class="material-icons material-icons2">west</span></a>
+                    <button type="button" class="scroll"><span class="material-icons material-icons2">west</span></button>
                     <p class="carousel-text">1 из 3</p>
-                    <a class="scroll" href="#"><span class="material-icons material-icons2">east</span></a>
+                    <button type="button" class="scroll"><span class="material-icons material-icons2">east</span></button>
                 </div>
             </div>
         </section>
         <section class="collection">
             <div class="container">
                 <div class="new-artifacts">
-                    <h2>Новые артефакты</h2>
+                    <h2 class="collection-title">Новые артефакты</h2>
                     <div class="box-collection">
                         <div class="upper-box">
-                            <img src="./collection/Moss.png" alt="plant">
+                            <img class="moss" src="./collection/Moss.png" alt="plant">
                             <img src="./collection/Moss2.png" alt="plant">
                             <img src="./collection/Layer 3 1.png" alt="plant">
                             <img class="num42" src="./collection/42.png" alt="number">
@@ -114,7 +114,7 @@
                             <img class="num27" src="./collection/27.png" alt="number">
                         </div>
                         <div class="lower-box">
-                            <img src="./collection/flower2.png" alt="plant">
+                            <img class="flower" src="./collection/flower2.png" alt="plant">
                             <img src="./collection/Polypody.png" alt="plant">
                             <img src="./collection/rock.png" alt="plant">
                             <img src="./collection/flower3.png" alt="plant">
@@ -135,7 +135,29 @@
                 </div>
             </div>
         </section>
+        <section class="feedback-form">
+            <div id="foot-container" class="container">
+            <div class="form">
+                <h2 class="form-title">Помочь проекту</h2>
+                <p class="form-text">Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
+                <div class="box-form">
+                <fieldset>
+                    <input type="text" id="name" name="name" placeholder="  Имя" />
+                     <br>
+                    <input type="email" id="email" name="email" placeholder="  Email"/>
+                  </fieldset>
+                </div>
+                <button type="submit" id="form-btn" class="btn">Отправить</button>
+            </div>
+        </div>
+            <div class="feedback-bg-img">
+                <img src="./footer/1_1 (1).png" alt="фото">
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="foot-one"></div>
+        <div class="foot-two"></div>
+    </footer>
 </body>
 </html>

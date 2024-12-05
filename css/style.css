@@ -227,7 +227,7 @@
 
 .btn {
     font-family: 'Open Sans' sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--color-green);
     background-color: var(--color-dark);
     border: solid 1px var(--color-green);
@@ -263,6 +263,11 @@
     margin-bottom: 57px;
 }
 
+.scroll {
+    background-color: var(--color-dark);
+    border: none;
+}
+
 .material-icons2 {
     color: var(--color-grey);
 }
@@ -274,6 +279,7 @@
 
 .material-icons2:active {
     color: var(--color-green-active);
+    transform: scale(1.2);
 }
 
 .carousel-text {
@@ -295,7 +301,7 @@
     margin-bottom: 60px;
 }
 
-h2 {
+.collection-title {
     font-family: 'Cormorant', sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -313,20 +319,69 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .upper-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    gap: 60px;
     padding: 16px 16px 0 16px;
+}
+.moss {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+.num42 {
+    position: absolute;
+    left: 16px;
+    top: 142px;
+}
+.num72 {
+    position: absolute;
+    left: 334px;
+    top: 16px;
+}
+.num27 {
+    position: absolute;
+    left: 516px;
+    top: 50px;
 }
 
 .lower-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     padding: 16px;
+    gap: 60px;
+}
+.num51 {
+    position: absolute;
+    left: 156px;
+    top: 381px;
+}
+.num94 {
+    position: absolute;
+    left: 394px;
+    top: 453px;
+}
+.num17 {
+    position: absolute;
+    left: 632px;
+    top: 184px;
+}
+.num23 {
+    position: absolute;
+    left: 755px;
+    top: 453px;
+}
+
+.flower {
+    position: absolute;
+    left: 16px;
+    top: 184px;
 }
 
 .primary {
@@ -376,8 +431,131 @@ h2 {
 
 .primary-arrow:hover {
     color: var(--color-green-active);
+    transition: color 0.2s ease;
+    transform: scale(1.2);
+}
+
+.primary-arrow:active {
+    color: var(--green-text);
 }
 
 .primary-arrow:disabled {
     color: var(--color-grey);
+}
+
+/* FEEDBACK */
+
+.feedback-form {
+    height: 463px;
+    position: relative;
+    background-image: url(../footer/shade2.png);
+}
+
+.feedback-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+    .feedback-bg-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #foot-container {
+        height: 463px;
+        display: flex;
+        align-items: center;
+    }
+    
+
+    .form {
+        width: 825px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-title {
+        font-family: 'Cormorant', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+
+    .form-text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+
+    #form-btn {
+        font-weight: 700;
+        color: var(--shade-color);
+        background-color: var(--color-green);
+        border: none;
+    }
+
+    #form-btn:hover {
+        background-color: var(--icon-hover);
+        transition: color 0.2s ease;
+    }
+
+    #form-btn:active {
+        background-color: var(--color-green-active);
+        transition: color 0.2s ease;
+        transform: scale(0.98);
+    }
+
+    input {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        width: 350px;
+        height: 45px;
+        border: none;
+        outline:none;
+        margin-bottom: 24px;
+        color: var(--color-grey);
+    }
+    
+    input:hover {
+        background-color: var(--color-grey);
+        color: #FFFFFF;
+    }
+
+
+    input:focus {
+        color: #0B1919;
+        border-color: var(--color-grey);
+    }
+
+    input:active {
+        background-color: var(--color-grey);
+        color: #FFFFFF;
+    }
+
+    input::after {
+        content: "";
+        background-color: var(--color-grey);
+        color: #FFFFFF;
+    }
+/* FOOTER */
+
+.foot-one {
+    height: 60px;
+    background-color: var(--shade-color);
+}
+
+.foot-two {
+    height: 20px;
+    background-color: var(--color-dark);
 }
