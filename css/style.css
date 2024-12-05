@@ -553,9 +553,16 @@
 .foot-one {
     height: 60px;
     background-color: var(--shade-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .foot-two {
     height: 20px;
     background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
