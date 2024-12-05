@@ -13,6 +13,7 @@
         --color-green-active: #688B05;
         --icon-hover: #91AC46;
         --shade-color: #0B1919;
+        --green-text: #506829;
     }
 
     body {
@@ -259,6 +260,7 @@
     display: flex;
     justify-content: center;
     gap: 23px;
+    margin-bottom: 57px;
 }
 
 .material-icons2 {
@@ -279,4 +281,103 @@
     font-weight: 700;
     font-size: 24px;
     color: #FFFFFF;
+}
+
+
+/* COLLECTION */
+
+.new-artifacts {
+    height: 571px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    position: absolute;
+    align-self: start;
+}
+
+.box-collection {
+    width: 845px;
+    height: 493px;
+    background-color: var(--shade-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 0 16px;
+}
+
+.lower-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.primary {
+    width: 255px;
+    height: 493px;
+    background-color: var(--color-green);
+}
+
+.primary-title {
+    font-family: 'Cormorant', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--shade-color);
+    padding: 16px 0 8px 16px;
+}
+
+.primary-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--green-text);
+    padding-left:16px;
+    padding-right: 16px;
+}
+
+.primary-text2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--green-text);
+    padding: 40px 16px 0 16px;
+}
+
+.primary-btn {
+    padding-top: 75px;
+}
+
+.primary-arrow {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 16px;
+    color: var(--shade-color);
+}
+
+.primary-arrow:hover {
+    color: var(--color-green-active);
+}
+
+.primary-arrow:disabled {
+    color: var(--color-grey);
 }
